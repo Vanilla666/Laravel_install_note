@@ -11,12 +11,12 @@ Laravel git clone 專案後要打的指令 跟 Laravel 安裝套件需要打的�
 <h1> Laravel 安裝套件 </h1>
   以下套件暫時以jorenvanhocht/laravel-share 代替</br>
    composer require 套件名 (安裝套件) </br>
- 到 config/app.php
+ 到 config/app.php </br>
 'providers' => [ //這裡是放置安裝的套件 </br>
     ...
     Jorenvh\Share\Providers\ShareServiceProvider::class,
 ]; </br>
-到 config/app.php
+到 config/app.php </br>
 'aliases' => [ //這裡是啟動套件關鍵字，基於後面的服務 </br>
     ...
     'Share' => Jorenvh\Share\ShareFacade::class,
